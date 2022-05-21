@@ -515,7 +515,7 @@ new Vue({
       var v_id = divPlayer.attr("data-id");
       var v_o_url = divPlayer.attr("data-url");
       var v_n_url = v_o_url.replace(/[^\/]+\/?$/,v_id +'_i.m3mu');
-      v_n_url = v_n_url.replace('https','http');
+      //v_n_url = v_n_url.replace('https','http');
       this.url = v_n_url;
       
       // 在下载页面才触发，修改页面 URL，携带下载路径，避免刷新后丢失
